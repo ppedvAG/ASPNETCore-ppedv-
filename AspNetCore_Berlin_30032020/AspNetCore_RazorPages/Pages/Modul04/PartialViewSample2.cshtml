@@ -1,0 +1,11 @@
+﻿@page
+@model AspNetCore_RazorPages.Pages.Modul04.PartialViewSample2Model
+@{
+    ViewData["Title"] = "PartialViewSample2";
+}
+
+<h1>PartialViewSample2</h1>
+<!-- 'statische Anzeige' -->
+<partial name="_Zeit" />
+<!-- Zur Laufzeit reingeniert-->
+<a asp-page-handler="excel" class="btn btn-danger">Excel Export</a>
