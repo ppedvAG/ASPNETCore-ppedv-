@@ -25,16 +25,13 @@ namespace AspNetCore_RazorPages
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddSession();
-
-            services.AddSignalR();
-
 
             // Customize registration
             services.AddSingleton<ICarService, CarService>();
             services.AddTransient<ICarService, CarService>();
             services.AddScoped<ICarService, CarService>();
-
+            services.AddAuthentication();
+            services.AddAuthorization();
             
         }
 
@@ -56,10 +53,8 @@ namespace AspNetCore_RazorPages
             app.UseStaticFiles();
 
             app.UseRouting();
-
-            app.UseSession();
-
             app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {

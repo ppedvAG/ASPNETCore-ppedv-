@@ -1,0 +1,29 @@
+﻿@page
+@model AspNetCore_RazorPages.Pages.Modul03.IndexModel
+@{
+}
+
+<p>Modul03 - Erstes Beispiel</p>
+
+@Model.MyProperty, asdfjkbasdfjbaskj
+
+<div style='@(Model.MyProperty==7?"background-color:yellow":"background-color:orange")'>demo</div>
+
+
+@if (Model.MyProperty == 7)
+{
+    <div style="background-color:green">demo</div>
+}
+else
+{
+    <div style="background-color:blue">demo</div>
+}
+
+@for (int i = 0; i < 7; i++)
+{
+    @DateTime.Now.AddDays(i).ToString("dddd");
+    <br />
+}
+
+<hr />
+
