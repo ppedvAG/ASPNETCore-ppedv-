@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCore_RazorPages.Pages.Modul05;
 using DepencyInjectionSample.BetterSample;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -9,6 +10,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using AspNetCore_RazorPages.Data;
 
 namespace AspNetCore_RazorPages
 {
@@ -32,6 +35,11 @@ namespace AspNetCore_RazorPages
             services.AddScoped<ICarService, CarService>();
             services.AddAuthentication();
             services.AddAuthorization();
+
+            services.AddDbContext<AufgabenDbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("AufgabenDbContext")));
+
+            
             
         }
 
@@ -48,13 +56,18 @@ namespace AspNetCore_RazorPages
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            AppDomain.CurrentDomain.SetData("BildVerzeichnis", env.WebRootPath);
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
             app.UseAuthorization();
             app.UseAuthentication();
+
+            app.MapWhen(context => context.Request.Path.ToString().Contains("imagegen"), subapp =>
+            {
+                subapp.UseThumbnailGen();
+            });
 
             app.UseEndpoints(endpoints =>
             {

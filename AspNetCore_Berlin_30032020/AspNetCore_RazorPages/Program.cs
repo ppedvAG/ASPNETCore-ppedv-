@@ -11,6 +11,9 @@ namespace AspNetCore_RazorPages
 {
     public class Program
     {
+
+
+
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
