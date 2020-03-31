@@ -8,19 +8,19 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AspNetCore_RazorPages.Data;
 
-namespace AspNetCore_RazorPages.Pages.Aufgaben
+namespace AspNetCore_RazorPages.Pages.BlogArticle
 {
     public class EditModel : PageModel
     {
-        private readonly AspNetCore_RazorPages.Data.AufgabenDbContext _context;
+        private readonly AspNetCore_RazorPages.Data.BlogDbContext _context;
 
-        public EditModel(AspNetCore_RazorPages.Data.AufgabenDbContext context)
+        public EditModel(AspNetCore_RazorPages.Data.BlogDbContext context)
         {
             _context = context;
         }
 
         [BindProperty]
-        public Aufgabe Aufgabe { get; set; }
+        public Blog Blog { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -29,9 +29,15 @@ namespace AspNetCore_RazorPages.Pages.Aufgaben
                 return NotFound();
             }
 
-            Aufgabe = await _context.Aufgabe.FirstOrDefaultAsync(m => m.Id == id);
+            Blog = await _context.Blog.FirstOrDefaultAsync(m => m.Id == id);
 
-            if (Aufgabe == null)
+            await _context.Blog.FirstAsync(m => m.Id == id);
+            //await _context.Blog.SingleOrDefault
+
+            _context.Blog.Where(n => n.CreatedBy == "Max").ToList();
+
+
+            if (Blog == null)
             {
                 return NotFound();
             }
@@ -46,8 +52,8 @@ namespace AspNetCore_RazorPages.Pages.Aufgaben
             {
                 return Page();
             }
-            
-            _context.Attach(Aufgabe).State = EntityState.Modified;
+
+            _context.Attach(Blog).State = EntityState.Modified;
 
             try
             {
@@ -55,7 +61,7 @@ namespace AspNetCore_RazorPages.Pages.Aufgaben
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!AufgabeExists(Aufgabe.Id))
+                if (!BlogExists(Blog.Id))
                 {
                     return NotFound();
                 }
@@ -68,9 +74,9 @@ namespace AspNetCore_RazorPages.Pages.Aufgaben
             return RedirectToPage("./Index");
         }
 
-        private bool AufgabeExists(int id)
+        private bool BlogExists(int id)
         {
-            return _context.Aufgabe.Any(e => e.Id == id);
+            return _context.Blog.Any(e => e.Id == id);
         }
     }
 }

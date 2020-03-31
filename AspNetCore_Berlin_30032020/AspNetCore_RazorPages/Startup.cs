@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -39,8 +39,8 @@ namespace AspNetCore_RazorPages
             services.AddDbContext<AufgabenDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("AufgabenDbContext")));
 
-            
-            
+            services.AddDbContext<BlogDbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("BlogDbContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
