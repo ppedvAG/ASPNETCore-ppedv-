@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AspNetCore_MVC.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace AspNetCore_MVC.Controllers
@@ -30,6 +31,15 @@ namespace AspNetCore_MVC.Controllers
             myDynamicModel.Comments = _context.Comment.ToList();
 
             return View(myDynamicModel);
+        }
+
+        public async Task<IActionResult> ViewBagViewDataSample()
+        {
+            ViewData["abc"] = "def";
+
+            ViewBag.HansJuergenOtto = "wohnt in Stuttgart";
+
+            return View(await _context.Blog.ToListAsync());
         }
     }
 }
