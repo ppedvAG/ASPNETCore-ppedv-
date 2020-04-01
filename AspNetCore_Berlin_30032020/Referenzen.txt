@@ -1,0 +1,7 @@
+Einstiegskurs:
+
+Validierung ohne JavaScript
+https://docs.microsoft.com/de-de/aspnet/core/tutorials/razor-pages/validation?view=aspnetcore-3.1&tabs=visual-studio
+
+DataAnnotations
+https://asp.mvc-tutorial.com/models/data-annotations/

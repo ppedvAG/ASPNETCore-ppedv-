@@ -1,0 +1,23 @@
+Razor Pages
+
+RazorPage (View) + CodeBehind-Datei:
+
+RazorPage = komplette View Logik wie in MVC
+CodeBehind-Datei:
+ - Daten werden bereitgestellt
+ - Datenbankabfragen
+ - RazorModel kann nur eine View ansteuern und die Daten bereitstellen. 
+
+
+MVC
+
+Model: Stellt die Datenquelle, bzw Datenzugriff (DbContext) dar 
+
+Controller: 
+-   Kann mehere Views verwalten (themenbasiert) 
+-   Kann Navigation
+-   regelt es die Datenübertragung von  Backend <-> View 
+
+
+
+

@@ -1,0 +1,94 @@
+﻿@page
+@model AspNetCore_RazorPages.Pages.BlogModel
+@{
+    ViewData["Title"] = "Blog";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Blog Overview</h1>
+
+<div class="container">
+    @foreach (var blog in Model.Blogs)
+    {
+    <div class="container p-3 my-3 border">
+        <article>
+            <h2>@Html.DisplayFor(blogItem => blog.Title)</h2>
+            <p>@Html.DisplayFor(blogItem => blog.Content)</p>
+            <br />
+
+            @*@if (blog.Comments.Count > 0)
+            {
+                <p>Comments</p>
+            }*@
+            @foreach (var comment in blog.Comments)
+            {
+                <div class="input-group mb-3">
+                    <p>@Html.DisplayFor(commentItem => comment.CreatedBy): </p>
+                    <p>@Html.DisplayFor(commentItem => comment.Text)</p>
+                </div>
+            }
+            <form method="post" asp-route-id=@blog.Id>
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <label asp-for="Comment.Text" class="control-label"></label>
+                        <input type="text" asp-for="Comment.Text" class="form-control" placeholder="Comment">
+                        <label asp-for="Comment.CreatedBy" class="control-label"></label>
+                        <input asp-for="Comment.CreatedBy" class="form-control" />
+                        <div class="input-group-append">
+                            <button type="submit" asp-page-handler="create" asp-route-id="@blog.Id" class="btn btn-success">Create</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </form>
+        </article>
+    </div>
+    }
+
+</div>
+
+
+    @*<tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedBy)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>*@
+
+
+
+
+
+    @*<tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Blog[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Blog[0].Content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Blog[0].CreatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Blog[0].CreatedBy)
+            </th>
+            <th></th>
+        </tr>*@
+
+ 
+
+
+
