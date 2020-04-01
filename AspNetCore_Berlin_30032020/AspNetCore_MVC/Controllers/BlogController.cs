@@ -97,6 +97,7 @@ namespace AspNetCore_MVC.Controllers
             {
                 try
                 {
+                    //_context.Attach(Blog).State = EntityState.Modified; = #ältere Schreibvariante
                     _context.Update(blog);
                     await _context.SaveChangesAsync();
                 }

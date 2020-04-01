@@ -5,3 +5,8 @@ https://docs.microsoft.com/de-de/aspnet/core/tutorials/razor-pages/validation?vi
 
 DataAnnotations
 https://asp.mvc-tutorial.com/models/data-annotations/
+
+DataAnnotations Part2
+https://asp.mvc-tutorial.com/models/types-of-model-validation-dataannotations/
+
+
