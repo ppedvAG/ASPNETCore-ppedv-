@@ -22,7 +22,7 @@ namespace AspNetCore_RazorPages.Data
         public int BlogId { get; set; }
 
         //Navigation zu Blog -> dafür 
-        public Blog Blog { get; set; }
+        public virtual Blog Blog { get; set; }
 
 
     }

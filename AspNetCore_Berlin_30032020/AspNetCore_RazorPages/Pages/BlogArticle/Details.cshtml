@@ -38,6 +38,11 @@
         </dd>
     </dl>
 </div>
+
+@foreach (var current in Model.Blog.Comments)
+{
+    @current.Text; 
+}
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.Blog.Id">Edit</a> |
     <a asp-page="./Index">Back to List</a>

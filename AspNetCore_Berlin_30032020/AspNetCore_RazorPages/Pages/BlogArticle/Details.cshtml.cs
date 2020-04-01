@@ -29,6 +29,8 @@ namespace AspNetCore_RazorPages.Pages.BlogArticle
 
             Blog = await _context.Blog.FirstOrDefaultAsync(m => m.Id == id);
 
+            
+
             if (Blog == null)
             {
                 return NotFound();

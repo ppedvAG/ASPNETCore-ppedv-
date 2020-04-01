@@ -11,6 +11,12 @@ namespace AspNetCore_RazorPages.Data
         public BlogDbContext (DbContextOptions<BlogDbContext> options)
             : base(options)
         {
+
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseLazyLoadingProxies();
         }
 
         public DbSet<AspNetCore_RazorPages.Data.Blog> Blog { get; set; }

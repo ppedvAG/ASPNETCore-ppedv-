@@ -20,7 +20,7 @@ namespace AspNetCore_RazorPages.Pages.BlogComments
 
         public IActionResult OnGet()
         {
-        ViewData["BlogId"] = new SelectList(_context.Blog, "Id", "Id");
+            ViewData["BlogId"] = new SelectList(_context.Blog, "Id", "Title");
             return Page();
         }
 

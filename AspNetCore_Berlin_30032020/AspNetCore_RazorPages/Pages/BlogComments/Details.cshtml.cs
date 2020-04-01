@@ -30,6 +30,9 @@ namespace AspNetCore_RazorPages.Pages.BlogComments
             Comment = await _context.Comment
                 .Include(c => c.Blog).FirstOrDefaultAsync(m => m.Id == id);
 
+
+
+
             if (Comment == null)
             {
                 return NotFound();

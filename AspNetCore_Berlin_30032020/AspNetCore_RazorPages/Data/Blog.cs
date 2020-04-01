@@ -15,7 +15,7 @@ namespace AspNetCore_RazorPages.Data
         public DateTime CreatedAt { get; set; }
         public string CreatedBy { get; set; }
 
-        public ICollection<Comment> Comments { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
 
 
     }
