@@ -39,7 +39,24 @@ namespace AspNetCore_MVC.Controllers
 
             ViewBag.HansJuergenOtto = "wohnt in Stuttgart";
 
+            TestObj testObj = new TestObj();
+            testObj.Id = 111;
+            testObj.Test = "Testausgabe";
+            ViewBag.ComplexType = testObj;
+
             return View(await _context.Blog.ToListAsync());
         }
+
+        public  ActionResult FormularView()
+        {
+            return View();
+        }
+    }
+
+
+    public class TestObj
+    {
+        public int Id { get; set; }
+        public string Test { get; set; }
     }
 }

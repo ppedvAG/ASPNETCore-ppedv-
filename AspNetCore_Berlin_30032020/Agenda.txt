@@ -1,0 +1,39 @@
+01. April:
+
+Model 
+- Data Annotations
+- AttributeValidator
+	- Customize
+
+Controller:
+- DynamicView
+- ViewBag / ViewData
+- Controller -> RückgabeTypen ActionResult / Partial 
+
+Views:
+- Einfache Formulare 
+- Validierung
+
+
+02. April:
+
+Model:
+IModelBinder 1Std. 
+
+Controller:
+Filter/Routing -> : Writing Action Filters +  Configuring Routes -> 2 Stunden
+Caching Strategy -> 0,5 Std
+State Management -> bis zu 1 Std;
+
+View:
+ -PartialView (nur als Referenz)
+
+- Erstellen einer WebAPI + Swagger Doku Rest 
+
+Freitag:
+Callen von WebApi Methoden aus einer MVC Anwendung. 
+
+grpc = 2 Stunden 
+
+2-4 Stunden Buffer
+

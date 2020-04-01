@@ -11,6 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore_MVC", "AspNetCor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CEA625CE-4E75-4983-9316-B9BB61153334}"
 	ProjectSection(SolutionItems) = preProject
+		Agenda.txt = Agenda.txt
 		RazorPagesVsMVC.txt = RazorPagesVsMVC.txt
 		Referenzen.txt = Referenzen.txt
 	EndProjectSection
