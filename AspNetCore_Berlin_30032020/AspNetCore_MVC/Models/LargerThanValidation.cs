@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace AspNetCore_MVC.Models
 {
+
+    /// <summary>
+    /// Mit AttributeValidation kann man benutzerdefinierte Annotationen schreiben.
+    /// </summary>
     public class LargerThanValidation : ValidationAttribute
     {
         int MinimumValue { get; set; }

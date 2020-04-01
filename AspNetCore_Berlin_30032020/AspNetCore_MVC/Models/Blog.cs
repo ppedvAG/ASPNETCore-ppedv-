@@ -25,9 +25,9 @@ namespace AspNetCore_MVC.Models
         [DisplayName("Erstellt von")]
         public string CreatedBy { get; set; }
 
-        [LargerThanValidation(10, ErrorMessage = "Bitte einen Wert größer als 10 bitte eingeben")]
+        //[LargerThanValidation(10, ErrorMessage = "Bitte einen Wert größer als 10 bitte eingeben")]
 
-        public int Counter { get; set; }
+        //public int Counter { get; set; }
 
         public virtual ICollection<Comment> Comments { get; set; }
     }

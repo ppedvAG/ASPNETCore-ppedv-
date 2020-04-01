@@ -1,0 +1,55 @@
+﻿@using AspNetCore_MVC.Models;
+
+@{
+    ViewData["Title"] = "DynamicModelView";
+}
+
+<h1>DynamicModelView</h1>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowDynamicView</title>
+</head>
+<body>
+    <h2>Dynamic Website</h2>
+    <h2>@ViewBag.Message</h2>
+
+
+    <h2>Photo List</h2>
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+        @foreach (Blog currentBlog in Model.Blogs)
+        {
+            <tr>
+                <td>@currentBlog.Title</td>
+                <td>@currentBlog.Content</td>
+            </tr>
+
+        }
+    </table>
+
+    <h2>Comments List</h2>
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+        @foreach (Comment currentComment in Model.Comments)
+        {
+            <tr>
+                <td>@currentComment.CreatedBy</td>
+                <td>@Html.Raw(currentComment.Text)</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
+
