@@ -35,5 +35,11 @@ Callen von WebApi Methoden aus einer MVC Anwendung.
 
 grpc = 2 Stunden 
 
+Optionale Themen:
+- Controller Factory bauen
+- https://asp.net-hacker.rocks/2018/10/17/customizing-aspnetcore-08-modelbinders.html
+
+
+
 2-4 Stunden Buffer
 

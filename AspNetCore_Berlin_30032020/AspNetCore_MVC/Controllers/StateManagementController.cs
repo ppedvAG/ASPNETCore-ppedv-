@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCore_MVC.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
+using System.Text.Json;
+using System.Text.Json.Serialization;
 namespace AspNetCore_MVC.Controllers
 {
     public class StateManagementController : Controller
@@ -77,17 +80,29 @@ namespace AspNetCore_MVC.Controllers
 
             HttpContext.Session.SetString("Name", "John");
             HttpContext.Session.SetInt32("Age", 32);
+
+
+            Blog blog = new Blog();
+            blog.Title = "Microsoft Developer Magazin wurde eingestellt";
+            blog.Content = "Seit November 2019 bringt Microsoft sein Entwicklermagazin nicht mehr heraus";
+            blog.CreatedAt = DateTime.Now;
+            blog.CreatedBy = "Bill Gates";
+            blog.Id = 111;
+            //Einlesen  eines komplexen Types aus der Session mithilfe von JSON
+            string jsonString = JsonSerializer.Serialize(blog);
+            HttpContext.Session.SetString("neuerBlog", jsonString);
+
             return View();
         }
 
         public ActionResult SessionRead()
         {
-            //var user = new User()
-            //{
-            //};
-
             string Name = HttpContext.Session.GetString("Name");
             int Age = HttpContext.Session.GetInt32("Age").Value;
+
+            //Auslesen eines komplexen Types aus der Session mithilfe von JSON
+            string jsonString = HttpContext.Session.GetString("neuerBlog");
+            Blog blog = JsonSerializer.Deserialize<Blog>(jsonString);
             return View();
         }
 
