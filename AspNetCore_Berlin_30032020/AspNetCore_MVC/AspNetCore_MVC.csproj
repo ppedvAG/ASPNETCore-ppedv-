@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\Customers\**" />
+    <Compile Remove="Controllers\Fuhrpark\**" />
+    <Content Remove="Controllers\Customers\**" />
+    <Content Remove="Controllers\Fuhrpark\**" />
+    <EmbeddedResource Remove="Controllers\Customers\**" />
+    <EmbeddedResource Remove="Controllers\Fuhrpark\**" />
+    <None Remove="Controllers\Customers\**" />
+    <None Remove="Controllers\Fuhrpark\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
@@ -12,11 +23,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\Fuhrpark\" />
-    <Folder Include="Controllers\Customers\" />
   </ItemGroup>
 
 </Project>

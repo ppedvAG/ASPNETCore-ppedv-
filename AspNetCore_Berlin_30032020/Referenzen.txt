@@ -14,3 +14,11 @@ SSL mit ASP.NET Core
 https://docs.microsoft.com/de-de/aspnet/core/security/enforcing-ssl?view=aspnetcore-3.1&tabs=visual-studio
 
 
+Archithekturen:
+Domain Driven Development
+
+CQRS 
+
+Microservice + DomainDriven Development
+
+
