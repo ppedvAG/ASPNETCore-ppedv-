@@ -25,32 +25,14 @@
 
 <div id="div1"></div>
 
-
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script type="text/jscript">
-    $(document).ready(function () {
-        //$("#partialviews").load('/PartialViewSamples/OnGetMyPartial');
+    //$(document).ready(function () {
+    //    $("#partialviews").load('/PartialViewSamples/OnGetMyPartial');
+    //});
 
-
-        @*$.ajax({
-                    url: '@Url.Action("OnGetMyPartial", "PartialViewSamples")',
-                    type: 'GET',
-                    cache: false,
-                }).done(function(result){
-                    $('#partialviews').html(result);
-                });*@
-
-        $.ajax({
-            url: '/ Home/GetUserDetails',
-            contentType: 'application/html; charset=utf-8',
-            type: 'GET',
-            dataType: 'html'
-        })
-            .success(function (result) {
-                $('#partialviews').html(result);
-            })
-            .error(function (xhr, status) {
-                alert(status);
-            })
+    $("#button1").on("click", function () {
+        $("#div1").load("/PartialViewSamples/OnGetMyPartial");
     });
 </script>
 

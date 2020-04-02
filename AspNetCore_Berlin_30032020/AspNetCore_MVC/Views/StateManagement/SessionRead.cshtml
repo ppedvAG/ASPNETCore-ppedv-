@@ -1,0 +1,14 @@
+﻿@using Microsoft.AspNetCore.Http;
+@{
+    ViewData["Title"] = "SessionRead";
+ Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>SessionRead</h1>
+
+<!-- Niemals eine Session direkt in einer View auslesen. Dafür ist der Controller gedacht -->
+@*@functions{
+    string Name = HttpContext.Session.GetString("Name");
+}*@
+
+

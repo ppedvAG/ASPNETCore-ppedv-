@@ -70,6 +70,7 @@ namespace AspNetCore_MVC.Controllers
 
         public IActionResult PartialViewWithViewDataDirectory()
         {
+            
             return View();
         }
     }
