@@ -22,7 +22,7 @@ IModelBinder 1Std.
 
 Controller:
 Filter/Routing -> : Writing Action Filters +  Configuring Routes -> 2 Stunden
-Caching Strategy -> 0,5 Std
+Caching Strategy -> 0,5 Std 
 State Management -> bis zu 1 Std;
 
 View:

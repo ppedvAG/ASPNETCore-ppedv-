@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewData["Title"] = "LoadPartialOverGetMethod";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>LoadPartialOverGetMethod</h1>
+
+<p>Sample1: Rendering via jQuery</p>
+<div id="partialviews">
+    <!-- Inerhalb dieses Divs wird die PartialView via jQuery geladen-->
+</div>
+
+<p>Sample2: Rendering via Ajax</p>
+<div id="partialviews2">
+    <!-- Inerhalb dieses Divs wird die PartialView via jQuery geladen-->
+</div>
+
+
+
+<p>Diese Partial View wurde über die Controller.Methode OnGetPartial gerendert</p>
+@Html.ActionLink("Zeige weitere PartialView an", "OnGetMyPartial", "PartialViewSamples");
+
+<button type="button" id="button1">Load Partial View</button>
+
+<div id="div1"></div>
+
+
+<script type="text/jscript">
+    $(document).ready(function () {
+        //$("#partialviews").load('/PartialViewSamples/OnGetMyPartial');
+
+
+        @*$.ajax({
+                    url: '@Url.Action("OnGetMyPartial", "PartialViewSamples")',
+                    type: 'GET',
+                    cache: false,
+                }).done(function(result){
+                    $('#partialviews').html(result);
+                });*@
+
+        $.ajax({
+            url: '/ Home/GetUserDetails',
+            contentType: 'application/html; charset=utf-8',
+            type: 'GET',
+            dataType: 'html'
+        })
+            .success(function (result) {
+                $('#partialviews').html(result);
+            })
+            .error(function (xhr, status) {
+                alert(status);
+            })
+    });
+</script>
+
+
+
+
+@*<script>
+        $(document).ready(function () {
+
+            $("#button1").click(function () {
+                $("#div1").load("/PartialViewSamples/OnGetMyPartial");
+            });
+
+        });
+    </script>*@
+

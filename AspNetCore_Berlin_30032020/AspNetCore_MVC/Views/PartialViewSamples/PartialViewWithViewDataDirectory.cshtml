@@ -1,0 +1,28 @@
+﻿@model AspNetCore_MVC.ViewModels.BlogCommentVM
+@{
+    ViewData["Title"] = "PartialViewWithViewDataDirectory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>PartialViewWithViewDataDirectory</h1>
+
+
+@await Html.PartialAsync("_ShowComments", Model.TestProperty)
+
+<p>PartialViews als "Liste" oder als Template für die jeweilige Ausgabe</p>
+@{
+    var index = 0;
+
+    //Eine Partielle View bekommt hier eine Kopie vom ViewData-Wörterbuch.
+    foreach (var blog in Model.Blogs)
+    {
+        await Html.PartialAsync("_ArticleSection",
+                                blog,
+                                new ViewDataDictionary(ViewData)
+                                {
+                                    { "index", index }
+                                        });
+
+        index++;
+    }
+}

@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "PartialSample";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>PartialSample1</h1>
+
+<p>Es wird im Shared-Verzeichnis nach einer Partiellen Klasse _Address gesucht</p>
+<div>
+    @Html.Partial("_Address")
+</div>
+
+<h1>PartialSample1</h1>
+
+<p>Absoluter Pfad</p>
+<div>
+    <partial name="~/Views/Shared/_Address.cshtml" />
+</div>
+
+<p>Relativer Pfad</p>
+<div>
+    <partial name="../Blog/_LinkToBlockView.cshtml" />
+</div>
+
+
+
+
+
+

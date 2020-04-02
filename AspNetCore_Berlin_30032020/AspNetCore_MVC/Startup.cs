@@ -10,6 +10,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using AspNetCore_MVC.Data;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using AspNetCore_MVC.Binders;
 
 namespace AspNetCore_MVC
 {
@@ -26,6 +28,12 @@ namespace AspNetCore_MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddMvc(options =>
+            {
+                // Model Binder
+                options.ModelBinderProviders.Insert(0, new BlogEntityBinderProvider()); // register the binder to be the first one in the pipe
+            });
 
             services.AddDbContext<BlogDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("BlogDbContext")));
@@ -50,7 +58,7 @@ namespace AspNetCore_MVC
             app.UseRouting();
 
             app.UseAuthorization();
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

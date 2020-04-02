@@ -1,0 +1,18 @@
+﻿@model AspNetCore_MVC.ViewModels.BlogCommentVM
+@{
+    ViewData["Title"] = "_ShowComments";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Partial View - Zeige alle Kommentare an:</h1>
+
+
+<ul>
+    @foreach (var item in Model.Comments)
+    {
+        <li>
+            Subject:  @Html.Raw(item.Text)
+        </li>
+    }
+</ul>
+
