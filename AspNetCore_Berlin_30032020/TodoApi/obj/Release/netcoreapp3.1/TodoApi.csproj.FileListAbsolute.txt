@@ -145,3 +145,6 @@ C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\TodoApi\ob
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\TodoApi\obj\Release\netcoreapp3.1\TodoApi.dll
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\TodoApi\obj\Release\netcoreapp3.1\TodoApi.pdb
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\TodoApi\obj\Release\netcoreapp3.1\TodoApi.genruntimeconfig.cache
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\TodoApi\obj\Release\netcoreapp3.1\TodoApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\TodoApi\bin\Release\netcoreapp3.1\Todo.Infrastructure.dll
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\TodoApi\bin\Release\netcoreapp3.1\Todo.Infrastructure.pdb

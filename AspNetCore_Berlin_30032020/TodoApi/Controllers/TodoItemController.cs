@@ -5,8 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Todo.Domain.Entities;
+using Newtonsoft.Json;
+
 using TodoApi.Data;
+using TodoApi.Parameters;
+using Todo.Domain.Entities;
+using Todo.Infrastructure.Http.OpenApi.Pagging;
 
 namespace TodoApi.Controllers
 {
@@ -21,7 +25,11 @@ namespace TodoApi.Controllers
             _context = context;
         }
 
-        // GET: api/TodoItem
+
+
+        #region Get-Methode
+
+        //GET: api/TodoItem
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItem()
         {
@@ -41,6 +49,29 @@ namespace TodoApi.Controllers
 
             return todoItem;
         }
+
+        #region Paging
+        ////https://localhost:44325/api/ToDoItem?PageSize=2
+        //[HttpGet]
+        //public ActionResult GetTodoItem([FromQuery] TodoItemParameter todoItemParameter)
+        //{
+        //    IQueryable<TodoItem> allOpenTodoItems = _context.TodoItem.Where(n => n.IsComplete == todoItemParameter.IsComplete).AsQueryable();
+
+        //    PagedList<TodoItem> pagedList = PagedList<TodoItem>.ToPagedList(allOpenTodoItems,
+        //        todoItemParameter.PageNumber,
+        //        todoItemParameter.PageSize);
+
+
+        //    return Ok(pagedList);
+        //}
+        //public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItem([FromQuery] TodoItemParameter todoItemParameter)
+        //{
+        //    return await _context.TodoItem.Where(n => n.Name.Contains(todoItemParameter.Name) && n.IsComplete == todoItemParameter.IsComplete).ToListAsync();
+        //}
+        #endregion
+
+        #endregion
+
 
         // PUT: api/TodoItem/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for

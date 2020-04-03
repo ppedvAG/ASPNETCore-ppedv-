@@ -26,6 +26,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApi", "TodoApi\TodoApi.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithStateManagement", "StateManagement\WorkingWithStateManagement.csproj", "{03A65D88-331C-4576-991B-21463153F0EB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Todo.MVC", "Todo.MVC\Todo.MVC.csproj", "{EF3A26B9-D2A3-4F9C-94E7-7436D3949719}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Todo.Infrastructure", "Todo.Infrastructure\Todo.Infrastructure.csproj", "{62799D9A-5578-4016-9CA3-39B4CD474549}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +68,14 @@ Global
 		{03A65D88-331C-4576-991B-21463153F0EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03A65D88-331C-4576-991B-21463153F0EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03A65D88-331C-4576-991B-21463153F0EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF3A26B9-D2A3-4F9C-94E7-7436D3949719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3A26B9-D2A3-4F9C-94E7-7436D3949719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3A26B9-D2A3-4F9C-94E7-7436D3949719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3A26B9-D2A3-4F9C-94E7-7436D3949719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62799D9A-5578-4016-9CA3-39B4CD474549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62799D9A-5578-4016-9CA3-39B4CD474549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62799D9A-5578-4016-9CA3-39B4CD474549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62799D9A-5578-4016-9CA3-39B4CD474549}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

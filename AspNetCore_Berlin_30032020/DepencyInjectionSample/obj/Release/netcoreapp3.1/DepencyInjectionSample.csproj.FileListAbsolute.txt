@@ -1,0 +1,8 @@
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\DepencyInjectionSample\bin\Release\netcoreapp3.1\DepencyInjectionSample.deps.json
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\DepencyInjectionSample\bin\Release\netcoreapp3.1\DepencyInjectionSample.dll
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\DepencyInjectionSample\bin\Release\netcoreapp3.1\DepencyInjectionSample.pdb
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\DepencyInjectionSample\obj\Release\netcoreapp3.1\DepencyInjectionSample.csproj.CoreCompileInputs.cache
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\DepencyInjectionSample\obj\Release\netcoreapp3.1\DepencyInjectionSample.AssemblyInfoInputs.cache
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\DepencyInjectionSample\obj\Release\netcoreapp3.1\DepencyInjectionSample.AssemblyInfo.cs
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\DepencyInjectionSample\obj\Release\netcoreapp3.1\DepencyInjectionSample.dll
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\DepencyInjectionSample\obj\Release\netcoreapp3.1\DepencyInjectionSample.pdb

@@ -6,4 +6,3 @@ C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domai
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\obj\Release\netcoreapp3.1\Todo.Domain.AssemblyInfo.cs
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\obj\Release\netcoreapp3.1\Todo.Domain.dll
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\obj\Release\netcoreapp3.1\Todo.Domain.pdb
-C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\obj\Release\netcoreapp3.1\Todo.Domain.csprojAssemblyReference.cache
