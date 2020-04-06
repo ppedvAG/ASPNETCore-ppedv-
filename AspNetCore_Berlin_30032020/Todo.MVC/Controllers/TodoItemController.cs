@@ -199,9 +199,12 @@ namespace Todo.MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(long id)
         {
-            //var todoItem = await _context.TodoItem.FindAsync(id);
-            //_context.TodoItem.Remove(todoItem);
-            //await _context.SaveChangesAsync();
+            var url = "https://localhost:44325/api/TodoItem/" + id;
+            using var client = new HttpClient();
+
+            var response = await client.DeleteAsync(url); //api/Aufgabens/5
+
+            string result = response.Content.ReadAsStringAsync().Result;
 
             return RedirectToAction(nameof(Index));
         }

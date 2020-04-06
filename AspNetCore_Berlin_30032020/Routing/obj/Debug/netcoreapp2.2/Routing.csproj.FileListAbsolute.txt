@@ -1,6 +1,5 @@
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\bin\Debug\netcoreapp2.2\appsettings.Development.json
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\bin\Debug\netcoreapp2.2\appsettings.json
-C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\bin\Debug\netcoreapp2.2\Routing.deps.json
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\bin\Debug\netcoreapp2.2\Routing.runtimeconfig.json
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\bin\Debug\netcoreapp2.2\Routing.runtimeconfig.dev.json
@@ -35,3 +34,4 @@ C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\ob
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\obj\Debug\netcoreapp2.2\Routing.pdb
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\obj\Debug\netcoreapp2.2\Routing.genruntimeconfig.cache
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\obj\Debug\netcoreapp2.2\Routing.csproj.CopyComplete
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\bin\Debug\netcoreapp2.2\Properties\launchSettings.json

@@ -1,6 +1,5 @@
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\bin\Release\netcoreapp2.2\appsettings.Development.json
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\bin\Release\netcoreapp2.2\appsettings.json
-C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\bin\Release\netcoreapp2.2\Properties\launchSettings.json
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\bin\Release\netcoreapp2.2\Routing.deps.json
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\bin\Release\netcoreapp2.2\Routing.runtimeconfig.json
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Routing\bin\Release\netcoreapp2.2\Routing.runtimeconfig.dev.json

@@ -52,7 +52,7 @@ namespace TodoApi.Controllers
 
         #region Paging
         ////https://localhost:44325/api/ToDoItem?PageSize=2
-        //[HttpGet]
+        [HttpGet]
         //public ActionResult GetTodoItem([FromQuery] TodoItemParameter todoItemParameter)
         //{
         //    IQueryable<TodoItem> allOpenTodoItems = _context.TodoItem.Where(n => n.IsComplete == todoItemParameter.IsComplete).AsQueryable();

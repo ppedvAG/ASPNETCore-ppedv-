@@ -1,5 +1,10 @@
 Einstiegskurs:
 
+Referent: Kevin Winter
+Email: KevinW@ppedv.de
+
+Blog von PPEDV: blog.ppedv.de
+
 Validierung ohne JavaScript
 https://docs.microsoft.com/de-de/aspnet/core/tutorials/razor-pages/validation?view=aspnetcore-3.1&tabs=visual-studio
 
@@ -20,7 +25,40 @@ Archithekturen:
 Domain Driven Development
 CQRS 
 Microservice + DomainDriven Development
-HOATES
+
+HOATES -> https://code-maze.com/hateoas-aspnet-core-web-api/
+
+Data Shaping -> https://code-maze.com/data-shaping-aspnet-core-webapi/
+
+GRPC -> https://grpc.io/docs/tutorials/basic/csharp/
+
+Blogs:
+-> https://dejanstojanovic.net/aspnet/
+
+https://christianfindlay.com/2019/05/26/c-and-grpc-part-one/
+
+Mehr Backendlastig
+-> https://thedatafarm.com/
+
+MSDN -> Magazine
+https://docs.microsoft.com/de-de/archive/msdn-magazine/msdn-magazine-issues
+
+Blogs: 
+https://code-maze.com
+
+Alternative zum MSDN Magazin
+https://docs.microsoft.com/de-de/aspnet/core/whats-new/2020-02?view=aspnetcore-3.1
+
+Learning RazorPages
+https://www.learnrazorpages.com/asp-net-core
+
+
+
+
+
+
+
+
 
 
 

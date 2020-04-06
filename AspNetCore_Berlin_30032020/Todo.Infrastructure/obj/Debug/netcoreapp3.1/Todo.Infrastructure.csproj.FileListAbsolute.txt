@@ -1,0 +1,9 @@
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Infrastructure\bin\Debug\netcoreapp3.1\Todo.Infrastructure.deps.json
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Infrastructure\bin\Debug\netcoreapp3.1\Todo.Infrastructure.dll
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Infrastructure\bin\Debug\netcoreapp3.1\Todo.Infrastructure.pdb
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Infrastructure\obj\Debug\netcoreapp3.1\Todo.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Infrastructure\obj\Debug\netcoreapp3.1\Todo.Infrastructure.AssemblyInfoInputs.cache
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Infrastructure\obj\Debug\netcoreapp3.1\Todo.Infrastructure.AssemblyInfo.cs
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Infrastructure\obj\Debug\netcoreapp3.1\Todo.Infrastructure.dll
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Infrastructure\obj\Debug\netcoreapp3.1\Todo.Infrastructure.pdb
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Infrastructure\obj\Debug\netcoreapp3.1\Todo.Infrastructure.csprojAssemblyReference.cache

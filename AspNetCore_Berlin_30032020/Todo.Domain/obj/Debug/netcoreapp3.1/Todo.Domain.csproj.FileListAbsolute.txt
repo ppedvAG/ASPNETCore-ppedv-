@@ -1,9 +1,9 @@
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\bin\Debug\netcoreapp3.1\Todo.Domain.deps.json
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\bin\Debug\netcoreapp3.1\Todo.Domain.dll
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\bin\Debug\netcoreapp3.1\Todo.Domain.pdb
-C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\obj\Debug\netcoreapp3.1\Todo.Domain.csprojAssemblyReference.cache
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\obj\Debug\netcoreapp3.1\Todo.Domain.csproj.CoreCompileInputs.cache
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\obj\Debug\netcoreapp3.1\Todo.Domain.AssemblyInfoInputs.cache
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\obj\Debug\netcoreapp3.1\Todo.Domain.AssemblyInfo.cs
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\obj\Debug\netcoreapp3.1\Todo.Domain.dll
 C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\obj\Debug\netcoreapp3.1\Todo.Domain.pdb
+C:\Meine Kurse\ASPNETCore_Berlin30_03_2020\AspNetCore_Berlin_30032020\Todo.Domain\obj\Debug\netcoreapp3.1\Todo.Domain.csprojAssemblyReference.cache

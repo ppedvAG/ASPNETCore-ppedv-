@@ -11,6 +11,7 @@ using TodoApi.Data;
 
 namespace TodoApi
 {
+#pragma warning disable CS1591
     public class Program
     {
         public static void Main(string[] args)
@@ -35,4 +36,5 @@ namespace TodoApi
                     webBuilder.UseStartup<Startup>();
                 });
     }
+#pragma warning restore CS1591
 }
